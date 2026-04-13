@@ -1,3 +1,8 @@
+from src.events.event_bus import EventBus
+
+bus = EventBus()
+
 class Engine:
     def run(self):
-        return "CORE RUNNING"
+        bus.emit('system.start')
+        return 'CORE RUNNING WITH EVENTS'
