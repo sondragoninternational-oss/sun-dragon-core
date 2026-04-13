@@ -1,0 +1,8 @@
+{
+  "system.start": "core.boot",
+  "ai.request": "ai.process",
+  "security.alert": "security.scan",
+  "cloud.deploy": "cloud.executor",
+  "web.request": "web.router",
+  "pipeline.run": "devops.pipeline"
+}

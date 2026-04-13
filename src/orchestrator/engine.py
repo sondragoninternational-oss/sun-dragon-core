@@ -4,5 +4,5 @@ bus = EventBus()
 
 class Engine:
     def run(self):
-        bus.emit('system.start')
-        return 'CORE RUNNING WITH EVENTS'
+        bus.emit('system.start', {"status": "boot"})
+        return "CORE RUNNING WITH ARCHITECTURE LAYER"
